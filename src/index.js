@@ -15,5 +15,5 @@ const render = Component => {
 render(RootContailer);
 
 if (module.hot) {
-  module.hot.accept('./containers/Root', () => render(RootContailer))
+  module.hot.accept('Containers/Root', () => render(RootContailer))
 }
