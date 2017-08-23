@@ -4,4 +4,20 @@ yarn add react react-dom
 yarn add --dev babel-core babel-preset-env babel-preset-react
 yarn add --dev babel-loader
 yarn add --dev react-hot-loader@next
+yarn add --dev sass-loader node-sass css-loader style-loader
 yarn run dev
+
+
+
+
+webpack.config.js
+devtool :  --order by fast desc
+'eval'  -- production -> no,
+'cheap-eval-source-map'  -- production -> no,
+'cheap-source-map'  -- production -> yes,
+'cheap-module-eval-source-map'  -- production -> no,
+'cheap-module-source-map'  -- production -> yes,
+'evel-source-map'  -- production -> no,
+'source-map'  -- production -> yes,
+'nosource-source-map'  -- production -> yes
+

@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  devtool: 'source-map',
   context: path.resolve(__dirname, 'src'),
   entry: {
     app: [
@@ -21,6 +22,10 @@ module.exports = {
     rules: [
       {
         test: /\.js$/, exclude: /node_modules/, loader: ['babel-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
