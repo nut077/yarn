@@ -12,6 +12,11 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js'
   },
+  resolve: {
+    alias: {
+      Containers: './containers'
+    }
+  },
   module: {
     rules: [
       {
